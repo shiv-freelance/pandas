@@ -1,0 +1,85 @@
+
+1. data cleansing. --> if any missing data, null records how you handle them. (incorrect-correct)
+2. data manipulation --> DML (insert, update, delete) --> 
+
+
+data = {
+    "A": [1, 2, 3],
+    "B": [4, 5, 6],
+    "C": [7, 8, 9]
+}
+
+
+data = {
+    "A": [11, 22, 33],
+    "B": [44, 55, 66],
+    "C": [77, 88, 99]
+}
+
+persons = [
+    {
+        "first_name": "John",
+        "last_name": "Doe",
+        "age": 30,
+        "city": "New York",
+        "email": "john.doe@example.com",
+        "phone": "555-1234"
+    },
+    {
+        "first_name": "Alice",
+        "last_name": "Smith",
+        "age": 25,
+        "city": "Los Angeles",
+        "email": "alice.smith@example.com",
+        "phone": "555-5678"
+    },
+    {
+        "first_name": "Bob",
+        "last_name": "Johnson",
+        "age": 35,
+        "city": "Chicago",
+        "email": "bob.johnson@example.com",
+        "phone": "555-9876"
+    }
+]
+
+
+
+# duplicate records
+data = {
+    "A": [1, 1, 2, 3, 3],
+    "B": ["x", "x", "y", "z", "z"],
+    "C": ["foo", "foo", "bar", "baz", "baz"]
+}
+
+data = {
+    "id": [1, 2, 3, 4, 5],
+    "email": ["john@mail.com", "alice@gmail.com", "jhon@mail.com", "emma@outlook.com", "james@outlook.com"]
+}
+
+
+
+methods & attributes:
+--------------------
+
+1. df.shape ==> (rows, col)
+2. df.info() ==> information(summary) of df.
+3. df.head(n=5) ==> by default, it will return first 5 records, if you specify n value then you first 'n' no.of records.
+4. df.tail(n=5) ==> by default, it will return last 5 records, if you specify n value then you last 'n' no.of records.
+5. df.index ==> this will result the index values.
+6. df.set_index('col_name') ==> custom indexing
+7. df.reset_index() ==> original one, before customizing
+8. df.drop_duplicates() ==> to get unique records (or) to remove the duplicates.
+9. df.columns ==> will return the column names.
+10. mutliple conditions ==> df1[condition1 & condition2]
+11. df1.dropna() #  if a single record is null then removes the entire row
+12. df1.dropna(subset=['name']) # if name column have NaN values, will be droped.
+13. df1.describe() # gives you stats.
+
+
+
+
+
+
+
+
